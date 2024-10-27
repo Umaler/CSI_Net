@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-source ./env/bin/activate
+virtualenv .env && source .env/bin/activate && pip install -r requirements.txt
 ipython3 ./source/Drawer.py
